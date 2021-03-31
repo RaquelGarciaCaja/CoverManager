@@ -16,6 +16,17 @@
   }
 }
 
+.floorsList {
+  display: flex;
+  align-items: center;
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__input {
+    margin: 10px;
+  }
+}
 .zonesList {
   display: flex;
   flex-direction: column;
@@ -58,10 +69,6 @@
   }
   &__popOver {
     text-align: center;
-  }
-  &__img {
-    height: 50px;
-    width: 50px;
   }
 }
 

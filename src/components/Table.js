@@ -42,7 +42,6 @@ class Table extends React.Component {
         <button className="table__button" onClick={this.handleClick}>
           {this.props.name}
         </button>
-        <img className="table__img" src={logo} alt="foto mesas" />
 
         <div className={`table__containerInfo ${open}`}>
           <small className="table__popOver ">

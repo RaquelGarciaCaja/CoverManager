@@ -10,19 +10,19 @@ const Filters = (props) => {
   };
 
   return (
-    <form className="floorsList">
-      <label htmlFor="">
-        Filtra por nombre
+    <section>
+      <form className="floorsList">
+        <label htmlFor="">Filtra por nombre</label>{" "}
         <input
-          className="filter__input"
+          className="floorsList__input"
           type="text"
           placeholder="Mesa1"
           name="name"
           onChange={handlerFilterName}
         />{" "}
-        <small>Si escribes la mesa que quieres filtrar se plasma en la consola</small>
-      </label>{" "}
-    </form>
+      </form>
+      <small>Escribe la mesa que quieres buscar, visualizalo en la consola</small>
+    </section>
   );
 };
 

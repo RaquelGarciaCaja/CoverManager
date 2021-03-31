@@ -25,7 +25,6 @@ const Restaurants = (props) => {
     const foundZones = Object.values(restaurants[0].zones).find((a) => a.floor == floorId);
 
     //found tables
-
     const foundTables = Object.values(restaurants[0].tables).filter(
       (c) => c.id_zone == foundZones.id_zone
     );
