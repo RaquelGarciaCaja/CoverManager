@@ -1,7 +1,7 @@
 # Cover Manager 
 Herramientas usadas: React, HTML, CSS3 (SASS), react router dom, react-zoom-pan-pinch
 
-## frameworks usado: REACT
+## framework usado: REACT
 ### Instalación 🔧
 
 para ponerlo en marcha en su dispositivo:
@@ -22,7 +22,7 @@ npm run build
 
 ## Uso de react route DOM
 ### Instalación 🔧
- 🔧
+ 
 ```bash
 npm install --save react-router-dom:
 ```
