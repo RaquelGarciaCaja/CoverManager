@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../stylesheets/Floors.scss";
-import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
 class Table extends React.Component {
   constructor(props) {
@@ -8,7 +7,7 @@ class Table extends React.Component {
     this.state = {
       isOpen: false,
     };
-    // this.handleClick = this.handleClick.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
   // const height = 50;
   // const width = 50;
@@ -26,13 +25,13 @@ class Table extends React.Component {
   //   let diffY = e.offsetY - target.y;
   //   return Math.sqrt(diffX * diffX + (diffY + diffY));
   // };
-  // handleClick() {
-  //   this.setState({
-  //     isOpen: !this.state.isOpen,
-  //   });
-  // }
+  handleClick() {
+    this.setState({
+      isOpen: !this.state.isOpen,
+    });
+  }
   render() {
-    //   const open = this.state.isOpen ? "" : "hidden";
+    const open = this.state.isOpen ? "" : "hidden";
 
     return (
       <section className="table">
@@ -40,9 +39,9 @@ class Table extends React.Component {
           {this.props.name}
         </button>
 
-        <div className="table__containerInfo">
-          <small className="table__popOver">
-            {/* <small className={`table__popOver ${open}`}> */}
+        <div className={`table__containerInfo ${open}`}>
+          {/* <small className={`table__popOver"> */}
+          <small className="table__popOver ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
           </small>
         </div>
