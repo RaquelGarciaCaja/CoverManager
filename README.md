@@ -1,6 +1,5 @@
 # Cover Manager 
-Objetivo: Visualizar los proyectos que he realizado.
-Herramientas usadas: JavaScript, HTML, CSS3 (SASS), FlexBox, Grid y Gulp.
+Herramientas usadas: React, HTML, CSS3 (SASS), react router dom, react-zoom-pan-pinch
 
 ## frameworks usado: REACT
 ### Instalación 🔧
